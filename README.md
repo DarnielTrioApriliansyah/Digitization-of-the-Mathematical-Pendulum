@@ -76,7 +76,7 @@ harmonic motion and gravitational acceleration**.
 ```{=html}
 <p align="center">
 ```
-`<img src="images/simple_harmonic_motion.png" width="500">`{=html}
+`<img src="images/harmonic.png" width="500">`{=html}
 ```{=html}
 </p>
 ```
@@ -95,7 +95,7 @@ length of the pendulum and the gravitational acceleration.
 ```{=html}
 <p align="center">
 ```
-`<img src="images/mathematical_pendulum.png" width="500">`{=html}
+`<img src="images/images.jpg" width="500">`{=html}
 ```{=html}
 </p>
 ```
