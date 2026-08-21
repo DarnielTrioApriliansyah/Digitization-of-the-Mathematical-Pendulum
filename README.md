@@ -1,4 +1,4 @@
-# Digitization-of-the-Mathematical-Pendulum
+<img width="421" height="318" alt="Screenshot 2026-08-21 194913" src="https://github.com/user-attachments/assets/a62390d1-faa8-4943-a532-c24855125705" /># Digitization-of-the-Mathematical-Pendulum
 
 A digital mathematical pendulum laboratory instrument based on **Arduino
 Uno, E18-D80NK proximity sensor, I2C LCD, buzzer, push button, and
@@ -73,13 +73,11 @@ harmonic motion and gravitational acceleration**.
 
 ### Simple Harmonic Motion
 
-```{=html}
+
 <p align="center">
-```
-`<img src="images/harmonic.png" width="500">`{=html}
-```{=html}
+  <img src="images/harmonic.jpg" width="400">
 </p>
-```
+
 Simple Harmonic Motion (SHM) is an oscillatory motion in which the
 restoring force is proportional to the displacement from the equilibrium
 position.
@@ -92,13 +90,10 @@ length of the pendulum and the gravitational acceleration.
 
 ### Mathematical Pendulum
 
-```{=html}
 <p align="center">
-```
-`<img src="images/images.jpg" width="500">`{=html}
-```{=html}
+  <img src="images/images.jpg" width="400">
 </p>
-```
+
 A mathematical pendulum consists of a mass suspended from a string that
 is assumed to have negligible mass and length compared with the size of
 the pendulum bob.
@@ -131,13 +126,10 @@ length is converted from centimeters to meters.
 
 ### E18-D80NK Proximity Sensor
 
-```{=html}
 <p align="center">
-```
-`<img src="images/e18_d80nk.jpg" width="400">`{=html}
-```{=html}
+  <img src="images/ir.jpg" width="400">
 </p>
-```
+
 The **E18-D80NK** is an infrared optical proximity sensor used to detect
 objects without physical contact. Its detection distance can be adjusted
 within its operating range.
@@ -153,13 +145,10 @@ the Arduino to automatically count pendulum oscillations.
 
 ### Arduino UNO
 
-```{=html}
 <p align="center">
-```
-`<img src="images/arduino_uno.png" width="400">`{=html}
-```{=html}
+  <img src="images/arduino uno.jpg" width="400">
 </p>
-```
+
 Arduino UNO is the main microcontroller used in this project. It
 receives the signal from the E18-D80NK sensor, counts oscillations,
 measures elapsed time, calculates the pendulum period, and determines
@@ -172,13 +161,6 @@ communication at **9600 baud** and controls the I2C LCD and buzzer.
 
 ### Arduino IDE
 
-```{=html}
-<p align="center">
-```
-`<img src="images/arduino_ide.png" width="500">`{=html}
-```{=html}
-</p>
-```
 Arduino IDE is used to develop and upload the C/C++ program to Arduino
 UNO.
 
@@ -190,13 +172,6 @@ LCD display, buzzer feedback, and serial communication.
 
 ### Python
 
-```{=html}
-<p align="center">
-```
-`<img src="images/python.png" width="400">`{=html}
-```{=html}
-</p>
-```
 Python is used to create the graphical user interface and communicate
 with Arduino. The program accepts pendulum length and number of periods,
 sends the parameters to Arduino, receives the measurement result, and
@@ -208,13 +183,10 @@ The GUI uses **Tkinter**, while serial communication uses **PySerial**.
 
 ### I2C LCD
 
-```{=html}
 <p align="center">
-```
-`<img src="images/lcd_i2c.png" width="400">`{=html}
-```{=html}
+  <img src="images/lcd.jpg" width="400">
 </p>
-```
+
 The I2C LCD provides local information from Arduino. The implemented
 program uses an I2C LCD with address `0x27` and a 16 × 2 display.
 
@@ -236,13 +208,10 @@ Menghitung...
 
 ### Push Button
 
-```{=html}
 <p align="center">
-```
-`<img src="images/push_button.png" width="300">`{=html}
-```{=html}
+  <img src="images/push.jpg" width="400">
 </p>
-```
+
 The push button is used as a physical control element for the
 experiment. The system also provides a **Mulai** button through the
 Python GUI for starting a measurement.
@@ -251,13 +220,10 @@ Python GUI for starting a measurement.
 
 ### Buzzer
 
-```{=html}
 <p align="center">
-```
-`<img src="images/buzzer.png" width="300">`{=html}
-```{=html}
+  <img src="images/buzzer.jpg" width="400">
 </p>
-```
+
 The buzzer provides audible feedback. In the Arduino program, it is
 activated briefly when a pendulum event is detected and when the
 measurement process is completed.
@@ -266,19 +232,16 @@ measurement process is completed.
 
 ## Design
 
+<p align="center">
+  <img src="images/skematik.png" width="400">
+</p>
+
 The system consists of **hardware design** and **software design**. The
 hardware detects the pendulum oscillation and performs the measurement,
 while the software provides the user interface and data communication.
 
 ### Hardware Design
 
-```{=html}
-<p align="center">
-```
-`<img src="images/schematic.png" width="1000">`{=html}
-```{=html}
-</p>
-```
 The hardware consists of Arduino UNO, E18-D80NK proximity sensor, 16 × 2
 I2C LCD, buzzer, push button, mathematical pendulum, pendulum stand,
 PCB, jumper wires, and power supply.
@@ -541,7 +504,7 @@ sensor near the pendulum's oscillation path.
 Run:
 
 ``` bash
-python3 bandul_gui.py
+python3 interface.py
 ```
 
 Make sure the serial port matches the Arduino port:
@@ -562,6 +525,10 @@ gravitational acceleration, and returns the result to the Python GUI.
 
 ## Result
 
+<p align="center">
+  <img src="images/kit.png" width="400">
+</p>
+
 ### System Testing
 
 Testing evaluated the ability of the digital pendulum kit to measure
@@ -580,13 +547,6 @@ acceleration of **9.81 m/s²**.
 
 ### 25 cm Pendulum Test
 
-```{=html}
-<p align="center">
-```
-`<img src="images/test_25cm.png" width="800">`{=html}
-```{=html}
-</p>
-```
       Trial       Gravitational Acceleration (m/s²)
   ------------- -----------------------------------
         1                                      9.82
@@ -610,13 +570,6 @@ detection conditions.
 
 ### 30 cm Pendulum Test
 
-```{=html}
-<p align="center">
-```
-`<img src="images/test_30cm.png" width="800">`{=html}
-```{=html}
-</p>
-```
       Trial       Gravitational Acceleration (m/s²)
   ------------- -----------------------------------
         1                                     10.06
@@ -655,78 +608,13 @@ agreement with the standard gravitational acceleration**.
 
 ### Python Interface
 
-```{=html}
 <p align="center">
-```
-`<img src="images/python_interface.png" width="700">`{=html}
-```{=html}
+  <img src="images/interface.png" width="400">
 </p>
-```
+
 The Python GUI provides fields for pendulum length and number of periods
 and displays pendulum length, period, and gravitational acceleration. It
 also includes **Mulai, Reset, and Keluar** controls.
 
 ------------------------------------------------------------------------
 
-## Project Structure
-
-``` text
-Digitalisasi-Alat-Praktikum-Bandul-Matematis/
-│
-├── README.md
-│
-├── code/
-│   ├── bandul_arduino.ino
-│   └── bandul_gui.py
-│
-├── images/
-│   ├── simple_harmonic_motion.png
-│   ├── mathematical_pendulum.png
-│   ├── e18_d80nk.jpg
-│   ├── arduino_uno.png
-│   ├── arduino_ide.png
-│   ├── python.png
-│   ├── lcd_i2c.png
-│   ├── push_button.png
-│   ├── buzzer.png
-│   ├── schematic.png
-│   ├── python_interface.png
-│   ├── test_25cm.png
-│   └── test_30cm.png
-│
-└── LICENSE
-```
-
-------------------------------------------------------------------------
-
-## Reference
-
-This README is based on the project report **Digitalisasi Alat Praktikum
-Fisika Dasar Bandul Matematis**. The report documents the hardware
-design, Arduino and Python implementation, testing procedure, and
-measurement results.
-
-------------------------------------------------------------------------
-
-## Conclusion
-
-This project demonstrates a **digital mathematical pendulum laboratory
-instrument based on Arduino and Python**.
-
-The E18-D80NK proximity sensor detects pendulum oscillations
-automatically, while Arduino performs timing and gravitational
-acceleration calculations. The I2C LCD and buzzer provide local
-feedback, while the Python Tkinter interface provides an interactive
-method for entering experimental parameters and viewing measurement
-results.
-
-The experimental results show that the system can estimate gravitational
-acceleration with good agreement with the standard value. The **25 cm**
-configuration produced an average of **9.482 m/s²**, while the **30 cm**
-configuration produced an average of **9.814 m/s²**. The 30 cm
-configuration showed the closest agreement with the standard value of
-**9.81 m/s²**.
-
-The project can be further developed by adding automatic pendulum-length
-adjustment and improving the Python interface with more interactive data
-visualization.
