@@ -1,4 +1,4 @@
-<img width="421" height="318" alt="Screenshot 2026-08-21 194913" src="https://github.com/user-attachments/assets/a62390d1-faa8-4943-a532-c24855125705" /># Digitization-of-the-Mathematical-Pendulum
+# Digitization-of-the-Mathematical-Pendulum
 
 A digital mathematical pendulum laboratory instrument based on **Arduino
 Uno, E18-D80NK proximity sensor, I2C LCD, buzzer, push button, and
